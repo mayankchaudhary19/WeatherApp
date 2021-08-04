@@ -1,0 +1,27 @@
+{
+  "name": "weather_app",
+  "version": "1.0.0",
+  "description": "An app that shows current weather, air quality index and next golden hour",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.14.8",
+    "babel-loader": "^8.2.2",
+    "suncalc": "^1.8.0"
+  },
+  "devDependencies": {
+    "css-loader": "^6.2.0",
+    "css-minimizer-webpack-plugin": "^3.0.2",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.2",
+    "mini-css-extract-plugin": "^2.1.0",
+    "webpack": "^5.47.1",
+    "webpack-cli": "^4.7.2"
+  }
+}

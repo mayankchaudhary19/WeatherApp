@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Weather App</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="stylesheet" href="../src/style.css" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&display=swap" />
+</head>
+
+<body>
+    <div class="search-parent-box">
+        <div class="search-box">
+            <div class="location-box">
+                <img class="location-icon" src="assets/icons/location.svg" alt="location icon" />
+                <h4 id="location">Delhi, India</h4>
+            </div>
+            <div class="search-bar">
+                <input id="location-input" type="text" placeholder="Search for city, state, place, pincode... "
+                    autofocus />
+                <img src="assets/icons/search.svg" alt="search" />
+            </div>
+        </div>
+        <div class="parent-box">
+            <section class="left-box">
+                <div id="selected-unit" class="change-temp-unit-box"></div>
+                <div class="change-temp-unit-box">
+                    <h4 id="c-unit">°C</h4>
+                    <h4 id="f-unit">°F</h4>
+                </div>
+                <img id="weather-icon" src="assets/icons/weather_icon_pack/d03.svg" alt="weather icon" />
+                <div class="flex-row">
+                    <h1 id="current-temp">27</h1>
+                    <h2 id="unit-type">° C</h2>
+                </div>
+                <h2 id="date">25th Jun '21</h2>
+                <div class="horizontal-flex-box">
+                    <h4 id="day">Friday</h4>
+                    <div class="text-vertical-divider"></div>
+                    <h4 id="time">01:36 am</h4>
+                </div>
+                <div id="wind-humidity-rain-box" class="horizontal-flex-box" style="margin-top: 18px;">
+                    <div class="flex-row align-flex">
+                        <img id="wind-direction" src="assets/icons/wind.svg" alt="wind icon" />
+                        <h4>Wind &emsp;</h3>
+                            <h4 id="wind">10km/h</h4>
+                    </div>
+                    <div class="text-vertical-divider wind-humidity-rain-divider"></div>
+                    <div class="flex-row align-flex">
+                        <img src="assets/icons/humidity.svg" alt="humidity icon" />
+                        <h4>Humidity &emsp;</h4>
+                        <h4 id="humidity">54%</h4>
+                    </div>
+                    <div id="humidity-rain-divider" class="text-vertical-divider wind-humidity-rain-divider"></div>
+                    <div class="flex-row align-flex" id="rain-parent">
+                        <img src="assets/icons/rain.svg" alt="rain icon" />
+                        <h4>Rain &emsp;</h4>
+                        <h4 id="rain">0.2%</h4>
+                    </div>
+                </div>
+                <div class="weekly-temp-box">
+                    <img id="scroll-left" src="assets/icons/slider-arrow-right.svg" alt="scroll left" />
+                    <div class="weekly-temp-child-box">
+                        <div class="weekly-temp-card">
+                            <b>
+                                <h3>24 °C</h3>
+                            </b>
+                            <img src="assets/icons/weather_icon_pack/d03.svg" alt="weekly temp icon" />
+                            <b>
+                                <h3>Fri</h3>
+                            </b>
+                        </div>
+                        <div class="weekly-temp-card">
+                            <b>
+                                <h3>24 °C</h3>
+                            </b>
+                            <img src="assets/icons/weather_icon_pack/d03.svg" alt="weekly temp icon" />
+                            <b>
+                                <h3>Sat</h3>
+                            </b>
+                        </div>
+                        <div class="weekly-temp-card">
+                            <b>
+                                <h3>24 °C</h3>
+                            </b>
+                            <img src="assets/icons/weather_icon_pack/d03.svg" alt="weekly temp icon" />
+                            <b>
+                                <h3>Sun</h3>
+                            </b>
+                        </div>
+                        <div class="weekly-temp-card">
+                            <b>
+                                <h3>24 °C</h3>
+                            </b>
+                            <img src="assets/icons/weather_icon_pack/d03.svg" alt="weekly temp icon" />
+                            <b>
+                                <h3>Mon</h3>
+                            </b>
+                        </div>
+                        <div class="weekly-temp-card">
+                            <b>
+                                <h3>24 °C</h3>
+                            </b>
+                            <img src="assets/icons/weather_icon_pack/d03.svg" alt="weekly temp icon" />
+                            <b>
+                                <h3>Tue</h3>
+                            </b>
+                        </div>
+                        <div class="weekly-temp-card">
+                            <b>
+                                <h3>24 °C</h3>
+                            </b>
+                            <img src="assets/icons/weather_icon_pack/d03.svg" alt="weekly temp icon" />
+                            <b>
+                                <h3>Wed</h3>
+                            </b>
+                        </div>
+                        <div class="weekly-temp-card">
+                            <b>
+                                <h3>24 °C</h3>
+                            </b>
+                            <img src="assets/icons/weather_icon_pack/d03.svg" alt="weekly temp icon" />
+                            <b>
+                                <h3>Thu</h3>
+                            </b>
+                        </div>
+                        <div class="weekly-temp-card">
+                            <b>
+                                <h3>24 °C</h3>
+                            </b>
+                            <img src="assets/icons/weather_icon_pack/d03.svg" alt="weekly temp icon" />
+                            <b>
+                                <h3>Fri</h3>
+                            </b>
+                        </div>
+                    </div>
+                    <img id="scroll-right" src="assets/icons/slider-arrow-right.svg" alt="scroll right" />
+                </div>
+            </section>
+            <section class="right-box">
+                <div class="sun-hour-box">
+                    <div class="sun-hour-child-box">
+                        <h3>Sunrise</h3>
+                        <div class="sun-hour-sub-child-box">
+                            <div class="clock">
+                                <div class="hand seconds" sunrise-seconds></div>
+                                <div class="hand minutes" sunrise-minutes></div>
+                                <div class="hand hours" sunrise-hours></div>
+                            </div>
+                            <h3 id="sunrise-start">11:24</h3>
+                            <h4 id="sunrise-end">11:45</h4>
+                        </div>
+                    </div>
+                    <div class="golden-hour-child-box">
+                        <h3>Golden Hour</h3>
+                        <div class="sun-hour-sub-child-box golden-hour-sub-child-box">
+                            <div class="clock">
+                                <div class="hand seconds" golden-hour-seconds></div>
+                                <div class="hand minutes" golden-hour-minutes></div>
+                                <div class="hand hours" golden-hour-hours></div>
+                            </div>
+                            <h3 id="golden-hour-morning">6:00 AM</h3>
+                            <h4 id="golden-hour-evening">6:49 PM</h4>
+                        </div>
+                    </div>
+                    <div class="sun-hour-child-box">
+                        <h3>Sunset</h3>
+                        <div class="sun-hour-sub-child-box">
+                            <div class="clock">
+                                <div class="hand seconds" sunset-seconds></div>
+                                <div class="hand minutes" sunset-minutes></div>
+                                <div class="hand hours" sunset-hours></div>
+                            </div>
+                            <h3 id="sunset-start">7:21</h3>
+                            <h4 id="sunset-end">7:24</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-box-divider" style="margin-top: 40px;">
+                    <div class="horizontal-divider"></div>
+                    <div id="info"><b><i>
+                                <h3>i</h3>
+                            </i><b></div>
+                </div>
+                <div class="aq-uv-index-parent-box">
+                    <div class="aq-uv-index-box-child">
+                        <h3>Air Quality</h3>
+                        <img id="aq-uv-indicator-img" src="assets/icons/air-uv-diagram.svg" alt="Air quality">
+                        <h4 id="air-quality">2/5</h4>
+                        <h4 id="air-quality-desc">Moderate</h4>
+                        <div id="air-quality-indicator-box" class="aq-uv-index-indicator-box">
+                            <div class="aq-uv-index-idx">
+                            </div>
+                        </div>
+                    </div>
+                    <div></div>
+                    <div class="aq-uv-index-box-child">
+                        <h3>UV index</h3>
+                        <img src="assets/icons/air-uv-diagram.svg" alt="UV Index" />
+                        <h4 id="uv-index">6/13</h4>
+                        <h4 id="uv-index-desc">High</h4>
+                        <div id="uv-index-indicator-box" class="aq-uv-index-indicator-box">
+                            <div class="aq-uv-index-idx">
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </div>
+    </div>
+    <div class="loading-box">
+        <img src="assets\icons\loading.svg" alt="loading icon" />
+    </div>
+</body>
+<!-- <script src="../dist/main.js" type="module" async defer></script> -->
+
+</html>
