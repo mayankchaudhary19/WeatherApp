@@ -44,6 +44,7 @@ module.exports = {
 			hash: true,
 			template: "public/index.html",
 			filename: "./index.html",
+			favicon: `./public/assets/images/favicon.png`,
 		}),
 		new MiniCssExtractPlugin({
 			filename: "[name].css",
