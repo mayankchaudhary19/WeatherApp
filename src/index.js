@@ -311,6 +311,7 @@ let setCurrentWeatherData = (weather) => {
 		windDirection.style.transform = `rotate(${windDegInMathDir}deg)`;
 	} else {
 		windDirection.src = windDefaultSvg;
+		windDirection.style.transform = `rotate(0deg)`;
 	}
 	humidity.innerHTML = weather.humidity + " %";
 	if (weather.rain) {
