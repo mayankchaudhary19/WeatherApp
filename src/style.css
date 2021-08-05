@@ -213,6 +213,9 @@ h4 {
 	padding-left: 2px;
 }
 
+#c-unit, #f-unit{
+	cursor: default;
+}
 /* #c-unit,
 #f-unit {
 	width: 50px;
