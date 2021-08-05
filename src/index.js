@@ -84,9 +84,6 @@ let previousLocationGeo = {
 	latitude: 28.7,
 	longitude: 77.1,
 };
-if (previousLocation.length < 15) {
-	displayLocation.style.cssText = "font-size: 1.4em";
-}
 
 // handle change in width of image
 let resizeImgObserver = new ResizeObserver((element) => {
