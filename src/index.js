@@ -84,6 +84,9 @@ let previousLocationGeo = {
 	latitude: 28.7,
 	longitude: 77.1,
 };
+if (previousLocation.length < 15) {
+	displayLocation.style.cssText = "font-size: 1.4em";
+}
 
 // handle change in width of image
 let resizeImgObserver = new ResizeObserver((element) => {
@@ -626,6 +629,7 @@ let locationSuccess = async (position) => {
 	);
 	let data = await response.json();
 	if (data.length !== 0) {
+		console.log(data);
 		setLocationData(position.coords.latitude, position.coords.longitude);
 		let country = regionNamesInEnglish.of(data[0].country);
 		let place = data[0].name;
