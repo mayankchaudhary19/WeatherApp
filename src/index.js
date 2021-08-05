@@ -644,6 +644,9 @@ let locationError = () => {
 	console.log("Unable to get current location of user!");
 	// set latitude and longitude as of Delhi, India
 	setLocationData(28.7, 77.1);
+	if (previousLocation.length < 15) {
+		displayLocation.style.cssText = "font-size: 1.4em";
+	}
 };
 
 // program begin here
