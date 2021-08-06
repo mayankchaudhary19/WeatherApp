@@ -13,7 +13,6 @@
     - °C -> °F
     - Km/hr -> Mph 
 
-
 - Current weather details include:
   -  Temperature 
   -  Date, day and time
@@ -33,11 +32,8 @@
 
 
 - HTML 
-
 - CSS
-
 - JavaScript
-
 - Webpack for bundling
 
 <br>
@@ -45,5 +41,11 @@
 ### Design & Deployment: 
 [Weather App Design](https://www.figma.com/community/file/1005161083412880387/Weather-App)  |   [Weather App](https://weather-aqi-golden-hour.netlify.app/)
 
+<br>
+
+### TODO:
 
 
+- Add alert dialog for showing errors
+- Change the background color according to the weather(check [Figma Color Scheme Page](https://www.figma.com/community/file/1005161083412880387/Weather-App) ) 
+- CSS -> SCSS
