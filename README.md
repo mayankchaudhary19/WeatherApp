@@ -49,3 +49,4 @@
 - Add alert dialog for showing errors
 - Change the background color according to the weather(check [Figma Color Scheme Page](https://www.figma.com/community/file/1005161083412880387/Weather-App) ) 
 - CSS -> SCSS
+- Make project more modular
